@@ -1,0 +1,156 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Custom Styles to target appropriate html elements 
+
+NOTE: This CSS does not follow best practices. It is written
+so it will work properly by choosing the bare minimum correct
+semantic HTML tags to complete the HTML exercise, which is not
+how you would typically write and organize your CSS. 
+
+You are welcome to explore it, but we will discuss 
+CSS best practices in detail in the coming weeks. 
+*/
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Page Layout */
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+  background-color: whitesmoke;
+}
+
+footer {
+  background-color: white;
+}
+
+header {
+  background-color: white;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  height: 100px;
+  object-fit: contain;
+}
+header nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+header a:last-child {
+  margin-left: auto;
+  padding-right: 50px;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+/* Hero Section */
+main section:first-of-type {
+  padding: 10%;
+  text-align: center;
+}
+
+main section:first-of-type h1 {
+  font-size: 4rem;
+  font-weight: black;
+  margin-bottom: 2rem;
+}
+
+main section:first-of-type a {
+  background-color: deeppink;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+/* Movie Trays */
+main {
+  padding: 0 2rem 4rem 2rem;
+}
+main h2 {
+  font-weight: 300;
+  padding-bottom: 8px;
+}
+main ol {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  display: flex;
+  overflow-x: scroll;
+  gap: 1rem;
+  min-height: 150px;
+}
+
+main li,
+main img {
+  min-height: 150px;
+}
+
+main section {
+  padding: 1rem 0;
+}
+
+/* Copyright Note at Bottom */
+footer {
+  padding: 0.5rem 0;
+  text-align: center;
+}
