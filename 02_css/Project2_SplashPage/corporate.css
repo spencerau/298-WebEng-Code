@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+body {
+  --primary: #2249bd;
+  --background: #e6ecff;
+  --secondary: #383b42;
+  font-family: "Open Sans", sans-serif;
+}
+
+.logo {
+  content: url("https://i.pinimg.com/originals/ea/53/3e/ea533ecbfd904d9f49e404a2813daf93.png");
+}
+
+.illustration {
+  content: url("https://img.freepik.com/free-vector/organic-flat-people-business-training-illustration_52683-59856.jpg");
+}
