@@ -1,13 +1,19 @@
 <!-- https://www.joshwcomeau.com/snippets/html/html-skeleton/ -->
+
+<!-- says this is an HTML document -->
 <!DOCTYPE html>
+<!-- specifies default language -->
 <html lang="en">
+
+
   <head>
-    <!-- 
+	<!-- 
         
     The head tag contains all linked assets 
     and metadata for your web page 
 
     -->
+	<!-- what shows up as the title of the webpage -->
     <title>Your Page Title</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -33,12 +39,82 @@
         a link tag
 
     -->
+
+	<!-- links your CSS file -->
     <link href="style.css" rel="stylesheet" />
+	<!-- links you icon that displays in the tab -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
   <body>
     <!-- The body tag contains the content of your site -->
-    <h1>Your content here!</h1>
+    <h1>Header 1</h1>
+	<h2>Header 2</h2>
+	<h3>Header 3</h3>
+	<h4>Header 4</h4>
+	<h5>Header 5</h5>
+	<h6>Header 6</h6>
+
+	<!-- paragraph tag; not heading -->
+	<p>Paragraph Tag that contains information</p>
+
+	<!-- Lists -->
+	
+	<!-- unordered list -->
+	<!-- orders by bullet points be default -->
+	<ul>
+		<li>List Item 1</li>
+		<li>List Item 2</li>
+		<li>List Item 3</li>
+	</ul>
+
+	<!-- ordered list -->
+	<ol>
+		<li>List Item 1</li>
+		<li>List Item 2</li>
+		<li>List Item 3</li>
+	</ol>
+
+	<!-- 
+		Some elements have attributes
+
+	-->
+
+	<!-- "a tag" is a link -->
+	<a href="https://www.google.com">This is a Link</a>
+
+	<!-- break or a newline -->
+	<br>
+	<br>
+
+	<!-- This is a button for performing some action such as 
+		generating something, etc so triggering other code to run -->
+	<button>Click this Button</button>
+
+	<!-- 
+		Alt text is used when the image cannot load and is read
+		aloud by a screen reader
+
+		If the image conveys meaning, alt text should describe that
+
+		If image is stylistic, use empty alt tag
+	-->
+
+	<br>
+
+	<img 
+	alt="Picture of a cat"
+	src="https://media.istockphoto.com/id/1010812722/photo/portrait-of-a-frisky-playful-cat-scottish-straight.jpg?s=612x612&w=0&k=20&c=-XrbFsfuJpF457OSquGCEVymivZY2JWLqNxOxi5jVvI="/>
+
+	<!-- 
+		Semantic Grouping Elements
+	-->
+	<nav></nav>
+	<header></header>
+	<main></main>
+	<footer></footer>
+	<section></section>
+	<!-- use div sparingly-->
+	<div></div>
 
     <!-- 
         
