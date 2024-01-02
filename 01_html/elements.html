@@ -1,0 +1,108 @@
+<!-- https://www.joshwcomeau.com/snippets/html/html-skeleton/ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+        
+    The head tag contains all linked assets 
+    and metadata for your web page 
+
+    -->
+    <title>Your Page Title</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Your name" />
+    <meta name="description" content="Brief description" />
+    <!-- 
+        
+        OG meta tags are for the Open Graph Protocol 
+        which controls how previews of your site are displayed
+        when a link is shared on social media or in messaging apps
+
+    -->
+    <meta property="og:title" content="Your Page Title" />
+    <meta property="og:description" content="Brief description" />
+    <meta property="og:image" content="/some-image.png" />
+    <meta property="og:url" content="/this-page.html" />
+    <meta property="og:site_name" content="Your Site Name" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:alt" content="image description" />
+    <!-- 
+
+        Style sheets, icons, and fonts can be linked using 
+        a link tag
+
+    -->
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <!-- The body tag contains the content of your site -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h6>. . . Heading 6</h6>
+
+    <p>paragraph
+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id urna sed sem efficitur imperdiet in eu diam. Donec faucibus justo ut nisl cursus, vitae varius tellus tincidunt. Aenean tincidunt turpis et consequat tempor. Vivamus lorem neque, iaculis vitae porttitor ac, commodo nec libero. Nullam non vulputate quam. Proin mollis, mi sed hendrerit feugiat, neque purus blandit justo, et porta tortor justo sed sapien. Vivamus congue enim quis nibh bibendum, eget cursus enim lacinia. Nulla sit amet lectus mattis nunc mollis semper sit amet ut mi.
+    </p>
+
+    <ul>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+    </ul>
+
+    <ol>
+      <li>List item</li>
+      <li>List item</li>
+      <li>List item</li>
+    </ol>
+
+    <!-- 
+      Some elements have "attributes" 
+      Attributes are required metatdata about the element
+      put on the inside of the opening tag
+    -->
+    <a href="#">Descriptive Link Text</a>
+
+    <!-- 
+      Many people confuse buttons and links 
+      Links should be used any time you link to an external
+      web page or another internal portion of the site
+      Buttons should be used whenever you are performing an action
+      (submitting a form, loading data, etc)
+      You can use CSS to make <a> look visually like buttons
+    -->
+    <button>Perform an Action</button>
+
+    <!-- "alt" attributes on img tags are shown if the image fails to load. They are also
+        read aloud by screen readers for visually impaired internet users. Alt tags
+        should describe any information that is communicated visually.
+        If the image is only for decoration and conveys no meaning, a blank alt tag should be used
+        (otherwise screen readers will read the entire image src)
+    -->
+    <img src="https://images.squarespace-cdn.com/content/v1/54e7a1a6e4b08db9da801ded/fdecc7f0-42bf-4696-bd4c-73a868e5d1d2/81.jpg" alt="A very adorable golden retriver puppy"/>
+
+    <!-- Elements can be grouped together using semantic tags that describe
+      which section of the website they belong to, such as navigation or footer.
+      Using these is better than using a <div>
+    -->
+    <nav></nav>
+    <header></header>
+    <main></main>
+    <footer></footer>
+    <section></section>
+    <div></div>
+
+
+    <!-- 
+        
+        If your site has javascript, you want to link it 
+        at the bottom of your body, so it runs after the initial
+        content loads
+    
+    -->
+    <script src="script.js"></script>
+  </body>
+</html>
