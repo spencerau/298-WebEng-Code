@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- Says this is an HTML document -->
+<html lang="en"> <!-- Specifies default language -->
+<head>
+    <!-- Head tag contains any sort of metadata 
+        and asset links for your site
+    -->
+  <title>Basic HTML Boilerplate</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Metadata about how site shows up in search engines -->
+  <meta name="author" content="Your name">
+  <meta name="description" content="Brief description">
+  <!-- OpenGraph is information for site previews in 
+        social media platforms and messaging apps
+    -->
+  <meta property="og:title" content="Your Page Title">
+  <meta property="og:description" content="Brief description">
+  <meta property="og:image" content="/some-image.png">
+  <meta property="og:url" content="/this-page.html">
+  <meta property="og:site_name" content="Your Site Name">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:alt" content="image description">
+  
+  <!-- Links your CSS file -->
+  <link href="style.css" rel="stylesheet">
+  <!-- Links the icon that displays in the tab -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+<body>
+  <!-- All content of your site goes in the body -->
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+  <h6>Heading 6</h6>
+
+  <p>Paragraph tag that contains any text that is not a title/heading </p>
+
+  <!-- Lists -->
+  <ul> <!-- unordered list -->
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+  </ul>
+
+  <ol> <!-- ordered list -->
+    <li>List item</li>
+    <li>List item</li>
+    <li>List item</li>
+  </ol>
+
+  <!-- 
+    Some elements have attributes
+
+    values to attributes should be inside quotes
+    attributes should be in the opening tag
+
+  -->
+  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Click me for a surprise</a>
+  <!-- Whenever you are perfoming an action 
+    (generating something, sending a request to a server, downloading a pdf)
+    you should use a button
+    -->
+  <button>Perform an action</button>
+
+  <!-- Alt text is used when the image cannot load and 
+        read aloud by a screen reader
+
+        If the image conveys meaning, alt text should describe that meaning
+
+        If the image is just stylistic, use an empty alt tag
+-->
+  <img
+  alt="A very cute golden retriever running through a field."
+  src="https://images.squarespace-cdn.com/content/v1/54e7a1a6e4b08db9da801ded/fdecc7f0-42bf-4696-bd4c-73a868e5d1d2/81.jpg" />
+
+    <!-- Semantic grouping elements 
+        
+    -->
+    <nav></nav>
+    <header></header>
+    <main></main>
+    <footer></footer>
+    <section></section>
+    <div></div> <!-- use sparingly -->
+
+
+  <!-- Any javascript linked in script tag at end of body -->
+  <script src="script.js"></script>
+</body>
+</html>

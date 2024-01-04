@@ -59,40 +59,52 @@ main {
 
 main {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: var(--spacing-unit);
+  flex-wrap: wrap-reverse;
   padding: 100px;
 }
 
 main .content {
-  flex: 1;
-}
-
-main .illustration {
   flex: 2;
 }
 
+main .illustration {
+  flex: 3;
+}
+
 header {
-  padding: 20px;
+  padding: calc(2*var(--spacing-unit));
 }
 
 .logo {
   height: 50px;
 }
 
+.illustration {
+  min-width: 300px;
+}
+
 .btn {
   text-decoration: none;
   background-color: var(--primary);
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: calc(2*var(--spacing-unit)) calc(4*var(--spacing-unit));
+  border-radius: var(--spacing-unit);
+  color: var(--background);
 }
 
-h1 {
+.title {
   font-size: 4rem;
   line-height: 1;
 }
 
-p {
-  font-size: 2rem;
+.blurb {
+  padding-top: calc(2*var(--spacing-unit));
+  font-size: 1.5rem;
+}
+
+.spacer {
+  height: calc(8*var(--spacing-unit));
 }
