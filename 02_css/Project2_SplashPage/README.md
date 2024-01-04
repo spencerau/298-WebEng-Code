@@ -2,19 +2,25 @@
 
 CSS is what allows you to control the visual layout and aesthetic of your web page. There's a lot for us to dive into with CSS - layout modes, responsive design, animations, spacing, etc. But you can accomplish a lot with very little if you think creatively.
 
-For this assignment, clone or copy/paste the index.html file in this directory to your local computer. Then create your ownl css file, and modify the html to link to it. This should be the **only** change you make to `index.html`, the rest you should change using CSS.
+For this assignment, clone or copy/paste the `index.html` and `style.css` files in this directory to your local computer. Then create your own additional css file, and modify the html to link to it. This should be the **only** change you make to `index.html`, the rest you should change using CSS. You are welcome to explore changes to the HTML for fun, but you're only submitting your CSS file and it should work with the template HTML that is given.
 
-Then, play around with using images, color, and typography alone to change the entire feel of a web page. We will learn more advanced layout and positioning techniques later, so for now stick to the following CSS attributes:
+Then, play around with using images, color, and typography alone to change the entire feel of a web page. We will learn more advanced layout and positioning techniques later, so for now try to stick to the following CSS attributes:
 
 - `background`
 - `background-color`
 - `color`
 - `font-family`
 - `font-weight`
+- `box-shadow`
+- `font-size`
+- `margin`
+- `padding`
+- `border`
+- `border-radius`
 
 ## Submission
 
-Submit only your CSS file to Canvas (nothing else). We will play around in class switching out the CSS file for the same HTML to see many different student's attempts, so make sure your styling works on the HTML file that is given.
+Submit your CSS file to Canvas (nothing else). We will play around in class switching out the CSS file for the same HTML to see many different student's attempts, so make sure your styling works on the HTML file that is given.
 
 ## Reading and Resources
 
