@@ -18,6 +18,18 @@ Then, play around with using images, color, and typography alone to change the e
 - `border`
 - `border-radius`
 
+**Images Hint:** Normally, we would set the URL for our images in the HTML as a `src` attribute on an `img` tag, but to modify the images in the css without modifying the html, you can use the following approach: 
+
+```
+.logo {
+  content: url("url-for-logo");
+}
+
+.illustration {
+  content: url("url-for-illustration-img");
+}
+```
+
 ## Submission
 
 Submit your CSS file to Canvas (nothing else). We will play around in class switching out the CSS file for the same HTML to see many different student's attempts, so make sure your styling works on the HTML file that is given.
