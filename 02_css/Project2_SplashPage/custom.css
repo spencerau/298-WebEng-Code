@@ -1,0 +1,20 @@
+
+body {
+    --primary: #ff6206;
+    --background: #d0d0d0;
+    --secondary: #383b42;
+    --spacing-unit: 7px;
+
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.illustration {
+    content: url("https://2.bp.blogspot.com/-RG6ytZ95CkI/VL2oora7AqI/AAAAAAAACNo/gd49WGkBBnE/s1600/cube_craft_2.0.png");
+    transform: scale(0.75);
+}
+
+.logo {
+    content: url("https://www.ocregister.com/wp-content/uploads/migration/n3d/n3dpo1-b888443z.120140401180250000gd3t9rm.10.jpg?w=620");
+    transform: scale(1); /* Increase the scale value to make the logo larger */
+    object-fit: contain;
+}

@@ -1,14 +1,31 @@
+
+/* Import the font from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
+/*
+  CSS Variables
+  Relatively new feature, but supported by all modern browsers
+  --variable-name: value;
+
+  to access value later
+  var(--variable-name)
+*/
 body {
+  /* --variable-name: value; */
   --primary: #2249bd;
   --background: white;
   --secondary: #383b42;
   --spacing-unit: 6px;
+  /* 
+    make every element in body use this font 
+    fallback options: sarif, sans-sarif, monospace
+    in this case, if Open Sans is not available, use sans-serif
+  */
   font-family: "Open Sans", sans-serif;
 }
 
 .logo {
+  /* select image tag and override source attribute */
   content: url("https://i.pinimg.com/originals/ea/53/3e/ea533ecbfd904d9f49e404a2813daf93.png");
 }
 
