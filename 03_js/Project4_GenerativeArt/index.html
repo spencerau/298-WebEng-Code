@@ -1,0 +1,44 @@
+<!-- We’re going to do this with the JavaScript canvas. No extra APIs. 
+The only HTML we have on the page is a <canvas> element at 320×320 pixels. -->
+
+
+<!-- generic HTML Boilerplate -->
+
+<!DOCTYPE html> <!-- Says this is an HTML document -->
+<html lang="en"> <!-- Specifies default language -->
+<head>
+    <!-- Head tag contains any sort of metadata 
+        and asset links for your site
+    -->
+    <title>Basic HTML Boilerplate</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Metadata about how site shows up in search engines -->
+    <meta name="author" content="Your name">
+    <meta name="description" content="Brief description">
+    <!-- OpenGraph is information for site previews in 
+        social media platforms and messaging apps
+    -->
+    <meta property="og:title" content="Your Page Title">
+    <meta property="og:description" content="Brief description">
+    <meta property="og:image" content="/some-image.png">
+    <meta property="og:url" content="/this-page.html">
+    <meta property="og:site_name" content="Your Site Name">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="image description">
+    
+    <!-- Links your CSS file -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Links the icon that displays in the tab -->
+    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg"> -->
+</head>
+<body>
+    <!-- All content of your site goes in the body -->
+    <!-- blank canvas of size 320x320 with id =canvas-->
+    <canvas id="canvas" width="200px" height="200px"></canvas>
+
+
+    <!-- Any javascript linked in script tag at end of body -->
+    <script src="script.js"></script>
+</body>
+</html>

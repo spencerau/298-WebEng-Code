@@ -36,7 +36,8 @@ body {
 	position: absolute;
 	bottom: 10px;
 	right: 10px;
-	padding: 10px;
+	/* padding is 5 px on top and bottom, 15 px on left and right */
+	padding: 5px 15px;
 	background-color: white;
 	z-index: 2; /* changes stacking order */
 }
