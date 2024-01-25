@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const response = await getGPT4Response(userQuery);
 
         // Append GPT-4's response to the chat box and keep the original formatting
-        appendMessage("bot", "GPT-4: " + parseGptResponse(response));  
+        appendMessage("bot", "GPT-4: " + response + "\n");  
 
 
         // Clear the input field
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function appendMessage(role, message) {
         const messageDiv = document.createElement("div");
         messageDiv.classList.add(role);
-        messageDiv.textContent = message;
+        messageDiv.innerHTML = message; // Use innerHTML instead of textContent
         chatBox.appendChild(messageDiv);
     }
 
@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             body: JSON.stringify({ prompt: query }),
         });
+        //console.log("RESPONSE: " + response)
 
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
@@ -54,17 +55,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let data;
         try {
+            //console.log("TEXT: " + text)  
             data = JSON.parse(text); // Safely parse the JSON
+            console.log("DATA: " + data)
         } catch (e) {
             throw new Error("Failed to parse JSON response");
         }
 
-        return data.response;
-    }
-
-    // Function to parse and preserve formatting in the GPT-4 response
-    function parseGptResponse(response) {
-        return response;
+        if (data && data.response) {
+            // Replace newlines with <br> for HTML display
+            const formattedResponse = data.response.replace(/\n/g, "<br>");
+            return formattedResponse;
+        } else {
+            throw new Error("No valid response in the data");
+        }
     }
 
 });

@@ -40,9 +40,11 @@ h1 {
 .user {
     background-color: #e5e5ea;
     text-align: right;
+	padding: 10px;
 }
 
 .bot {
     background-color: #f0f0f4;
     text-align: left;
+	padding: 10px;
 }
