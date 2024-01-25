@@ -1,0 +1,48 @@
+h1 {
+	text-align: center;
+	color: #333;
+	background-color: aquamarine;
+}
+
+/* Center the chat container vertically and horizontally */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: lightgray;	
+}
+
+/* Style the chat input form */
+#queryForm {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    gap: 15px;
+	padding: 10px;
+	border: 10px;
+	width: min(1000px, 900%);
+	height: auto;
+}
+
+/* Style the chat response box */
+.chat-box {
+    /* width: 100%; */
+    width: min(1000px, 80%);
+    height: max-content; /* Set a fixed height or use max-height for scrolling */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    border: 15px solid #ccc;
+    padding: 20px;
+    background-color: lightgray;
+}
+
+.user {
+    background-color: #e5e5ea;
+    text-align: right;
+}
+
+.bot {
+    background-color: #f0f0f4;
+    text-align: left;
+}
