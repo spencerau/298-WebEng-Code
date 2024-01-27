@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     async function getGPT4Response(query) {
         // change from local host
-        const response = await fetch("/api/openai", {
+        const response = await fetch("/openai", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

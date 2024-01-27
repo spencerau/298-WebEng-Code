@@ -15,7 +15,7 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-app.post('/api/openai', async (req, res) => {
+app.post('/openai', async (req, res) => {
   try {
     const completion = await openai.chat.completions.create({
       model: "gpt-4",
