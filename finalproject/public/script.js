@@ -1,4 +1,7 @@
 // https://platform.openai.com/docs/api-reference/
+// https://cookbook.openai.com/examples/how_to_build_an_agent_with_the_node_sdk
+// https://github.com/openai/openai-node/discussions/217
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const chatForm = document.getElementById("queryForm");
@@ -26,10 +29,13 @@ document.addEventListener("DOMContentLoaded", function () {
         chatBox.scrollTop = chatBox.scrollHeight;
     });
 
+    // use appendMessage function to append the message to the chat box so it tracks chat history
+    // instead of just overwriting the previous message
+
     function appendMessage(role, message) {
         const messageDiv = document.createElement("div");
         messageDiv.classList.add(role);
-        messageDiv.innerHTML = message; // Use innerHTML instead of textContent
+        messageDiv.innerHTML = message; // Use innerHTML instead of textContent so it can keep the original formatting
         chatBox.appendChild(messageDiv);
     }
 
