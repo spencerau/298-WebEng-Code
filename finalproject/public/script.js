@@ -40,8 +40,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     async function getGPT4Response(query) {
-        // ** make sure the format of the query is correct and is original
-        const response = await fetch("http://localhost:3000/api/openai", {
+        // change from local host
+        const response = await fetch("/api/openai", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
