@@ -32,19 +32,19 @@ h1 {
     width: min(1000px, 80%);
     height: max-content; /* Set a fixed height or use max-height for scrolling */
     overflow-y: auto; /* Enable vertical scrolling if content overflows */
-    border: 15px solid #ccc;
+    border: 15px solid darkgray;
     padding: 20px;
     background-color: lightgray;
 }
 
 .user {
-    background-color: #e5e5ea;
+    background-color: lightslategray;
     text-align: right;
 	padding: 10px;
 }
 
 .bot {
-    background-color: #f0f0f4;
+    background-color: lightgray;
     text-align: left;
 	padding: 10px;
 }
